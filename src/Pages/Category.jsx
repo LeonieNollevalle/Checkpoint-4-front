@@ -5,6 +5,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import CardCategory from '../components/Cardcategory';
 import '../styles/category.css';
+import NavBar from '../components/NavBar';
 
 const Category = () => {
   const { id } = useParams();
@@ -28,10 +29,11 @@ const Category = () => {
 
   return (
     <div className="container-page">
+      <NavBar />
       <div className="container-title-cat">
         <h1>{categorie ? categorie[0].name : null}</h1>
       </div>
-      <div className="container-img">
+      <div className="container-img-cat">
         {adddata
           ? adddata.map((add) => {
             return (

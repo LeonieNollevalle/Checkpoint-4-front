@@ -3,6 +3,7 @@ import { useParams } from 'react-router';
 import axios from 'axios';
 import '../styles/projet.css';
 import { Link } from 'react-router-dom';
+import NavBar from '../components/NavBar';
 
 const Projet = () => {
   const { id } = useParams();
@@ -17,6 +18,7 @@ const Projet = () => {
   console.log(adddata);
   return (
     <div className="container-projet">
+      <NavBar />
       <div className="container-title">
         <h1>● {adddata ? adddata[0].title : null}</h1>
       </div>
