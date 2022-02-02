@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import axios from 'axios';
 import '../styles/projet.css';
+import { Link } from 'react-router-dom';
 
 const Projet = () => {
   const { id } = useParams();
@@ -20,6 +21,12 @@ const Projet = () => {
         <h1>● {adddata ? adddata[0].title : null}</h1>
       </div>
       <div className="container-subtit">
+        <Link
+          className="link"
+          to={`/category/${adddata ? adddata[0].id_categorie : null}`}
+        >
+          <p>←</p>
+        </Link>
         <div className="container-information">
           <h2>{adddata ? adddata[0].subtitle : null}</h2>
           <p>{adddata ? adddata[0].description : null}</p>

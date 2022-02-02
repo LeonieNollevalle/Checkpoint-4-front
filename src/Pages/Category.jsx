@@ -4,6 +4,7 @@ import { useParams } from 'react-router';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import CardCategory from '../components/Cardcategory';
+import '../styles/category.css';
 
 const Category = () => {
   const { id } = useParams();
@@ -24,18 +25,23 @@ const Category = () => {
       .catch((error) => console.log(error));
   }, []);
   console.log(categorie);
+
   return (
-    <div>
-      <h1>{categorie ? categorie[0].name : null}</h1>
-      {adddata
-        ? adddata.map((add) => {
-          return (
-            <Link to={`/projet/${add.id}`}>
-              <CardCategory data={add} />
-            </Link>
-          );
-        })
-        : null}
+    <div className="container-page">
+      <div className="container-title-cat">
+        <h1>{categorie ? categorie[0].name : null}</h1>
+      </div>
+      <div className="container-img">
+        {adddata
+          ? adddata.map((add) => {
+            return (
+              <Link className="link" to={`/projet/${add.id}`}>
+                <CardCategory data={add} />
+              </Link>
+            );
+          })
+          : null}
+      </div>
     </div>
   );
 };
