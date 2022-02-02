@@ -1,0 +1,37 @@
+.container-page {
+  width: 100vw;
+  height: auto;
+  background-color: rgb(180, 180, 180);
+}
+
+.container-title-cat {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  font-size: 80px;
+  font-family: 'Open Sans', sans-serif;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid black;
+  text-transform: capitalize;
+}
+
+.container-img-cat {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 5vh;
+  gap: 10vw;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+.link p {
+  font-size: 30px;
+}
