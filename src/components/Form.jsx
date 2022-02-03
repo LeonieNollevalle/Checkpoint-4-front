@@ -51,7 +51,6 @@ const Form = ({ form, setForm, datas, setData }) => {
   };
   return (
     <div className={form ? 'container-all-form' : 'container-close'}>
-      {/* (title, date, subtitle, description, image_url, id_categorie) */}
       <div className="container-form">
         <div className="container-cross">
           <button type="button" onClick={() => setForm(!form)}>

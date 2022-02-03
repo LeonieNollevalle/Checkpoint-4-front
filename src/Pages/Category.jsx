@@ -29,8 +29,7 @@ const Category = () => {
       .then((res) => setCategorie(res.data))
       .catch((error) => console.log(error));
   }, []);
-  console.log(categorie);
-  console.log(adddata);
+  
 
 
   return (

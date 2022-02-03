@@ -14,7 +14,6 @@ const Home = () => {
       .then((res) => setCategorie(res.data))
       .catch((error) => console.log(error));
   }, []);
-  console.log(categorie);
   return (
     <>
       <div className="container-intro-a">

@@ -25,7 +25,6 @@ const Projet = () => {
     });
   };
 
-  console.log(adddata);
   return (
     <div className="container-projet">
       <Form form={form} setForm={setForm} datas={adddata} setData={setData} />
