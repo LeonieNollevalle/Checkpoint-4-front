@@ -1,0 +1,53 @@
+.container-all-form {
+  position: absolute;
+  z-index: 50;
+  width: 100vw;
+  height: 100vh;
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-form {
+  width: 50vw;
+  height: 60vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+
+.container-form form {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7%;
+  color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.container-form label {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container-form input {
+  width: 70%;
+  border-radius: 20px;
+  padding: 2%;
+  border: none;
+}
+
+.container-form select {
+  width: 50%;
+  border-radius: 20px;
+  padding: 1%;
+  border: none;
+}

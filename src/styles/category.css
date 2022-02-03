@@ -35,3 +35,8 @@
 .link p {
   font-size: 30px;
 }
+
+.container-btn-add {
+  padding: 20px;
+  text-align: end;
+}
