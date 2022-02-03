@@ -6,11 +6,14 @@ import { Link } from 'react-router-dom';
 import CardCategory from '../components/Cardcategory';
 import '../styles/category.css';
 import NavBar from '../components/NavBar';
+import Form from '../components/Form';
 
 const Category = () => {
   const { id } = useParams();
   const [adddata, setData] = useState();
   const [categorie, setCategorie] = useState();
+  const [form, setForm] = useState(false);
+
 
   useEffect(() => {
     axios
@@ -26,25 +29,36 @@ const Category = () => {
       .catch((error) => console.log(error));
   }, []);
   console.log(categorie);
+  console.log(adddata);
+
 
   return (
-    <div className="container-page">
-      <NavBar />
-      <div className="container-title-cat">
-        <h1>{categorie ? categorie[0].name : null}</h1>
+    <>
+      <div className="container-page">
+        <Form form={form} setForm={setForm} datas={adddata} setData={setData}/>
+        <NavBar />
+        <div className="container-title-cat">
+          <h1>{categorie ? categorie[0].name : null}</h1>
+        </div>
+        <div className="container-btn-add">
+          <button type="button" className="btn-vers-site" onClick={()=> setForm(!form)}>
+        Ajouter +
+          </button>
+        </div>
+        <div className="container-img-cat">
+          {adddata
+            ? adddata.map((add) => {
+              return (
+                <Link className="link" to={`/projet/${add.id}`}>
+                  <CardCategory data={add} />
+                </Link>
+              );
+            })
+            : null}
+        </div>
       </div>
-      <div className="container-img-cat">
-        {adddata
-          ? adddata.map((add) => {
-            return (
-              <Link className="link" to={`/projet/${add.id}`}>
-                <CardCategory data={add} />
-              </Link>
-            );
-          })
-          : null}
-      </div>
-    </div>
+    
+    </>
   );
 };
 
