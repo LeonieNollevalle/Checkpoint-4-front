@@ -12,6 +12,8 @@ const Category = () => {
   const { id } = useParams();
   const [adddata, setData] = useState();
   const [categorie, setCategorie] = useState();
+  const [form, setForm] = useState(false);
+
 
   useEffect(() => {
     axios
@@ -31,13 +33,13 @@ const Category = () => {
   return (
     <>
       <div className="container-page">
-        <Form/>
+        <Form form={form} setForm={setForm} />
         <NavBar />
         <div className="container-title-cat">
           <h1>{categorie ? categorie[0].name : null}</h1>
         </div>
         <div className="container-btn-add">
-          <button type="button" className="btn-vers-site">
+          <button type="button" className="btn-vers-site" onClick={()=> setForm(!form)}>
         Ajouter +
           </button>
         </div>

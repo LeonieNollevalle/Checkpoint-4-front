@@ -4,10 +4,12 @@ import axios from 'axios';
 import '../styles/projet.css';
 import { Link } from 'react-router-dom';
 import NavBar from '../components/NavBar';
+import Form from '../components/Form';
 
 const Projet = () => {
   const { id } = useParams();
   const [adddata, setData] = useState();
+  const [form, setForm] = useState(false);
 
   useEffect(() => {
     axios
@@ -18,6 +20,7 @@ const Projet = () => {
   console.log(adddata);
   return (
     <div className="container-projet">
+      <Form form={form} setForm={setForm} />
       <NavBar />
       <div className="container-title">
         <h1>● {adddata ? adddata[0].title : null}</h1>
@@ -35,7 +38,11 @@ const Projet = () => {
           <button type="button" className="btn-vers-site">
             Supprimer
           </button>
-          <button type="button" className="btn-vers-proto">
+          <button
+            type="button"
+            className="btn-vers-proto"
+            onClick={() => setForm(!form)}
+          >
             Modifier
           </button>
         </div>

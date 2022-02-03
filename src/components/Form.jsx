@@ -1,13 +1,16 @@
 import React from 'react';
 import '../styles/form.css';
 
-const Form = () => {
-  // const [form, addForm] = useState(true);
-  // addForm();
+const Form = ({ form, setForm }) => {
   return (
-    <div className="container-all-form">
-      {/* (title, date, subtitle, description, image_url, id_categorie) */}(
+    <div className={form ? 'container-all-form' : 'container-close'}>
+      {/* (title, date, subtitle, description, image_url, id_categorie) */}
       <div className="container-form">
+        <div className="container-cross">
+          <button type="button" onClick={() => setForm(!form)}>
+            ✕
+          </button>
+        </div>
         <form>
           <label htmlFor="titre">
             Titre :
@@ -40,6 +43,14 @@ const Form = () => {
               <option value="5">Motion</option>
             </select>
           </label>
+          <button
+            type="button"
+            className="btn-sub"
+            onClick={() => setForm(!form)}
+          >
+            {' '}
+            Envoyer
+          </button>
         </form>
       </div>
     </div>
