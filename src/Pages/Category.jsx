@@ -29,11 +29,13 @@ const Category = () => {
       .catch((error) => console.log(error));
   }, []);
   console.log(categorie);
+  console.log(adddata);
+
 
   return (
     <>
       <div className="container-page">
-        <Form form={form} setForm={setForm} />
+        <Form form={form} setForm={setForm} datas={adddata} setData={setData}/>
         <NavBar />
         <div className="container-title-cat">
           <h1>{categorie ? categorie[0].name : null}</h1>
