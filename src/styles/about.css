@@ -233,4 +233,25 @@
     justify-content: center;
     align-items: center;
   }
+
+  .btn-contact {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    font-size: 20px;
+    border-radius: 20px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    margin-left: 30%;
+    border: none;
+  }
+
+  .container-btn-contact {
+    width: 100vw;
+    height: auto;
+    padding: 1%;
+    background-color: rgb(180, 180, 180);
+  }
 }

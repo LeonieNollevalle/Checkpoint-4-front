@@ -30,13 +30,15 @@ const About = () => {
           par la mode peuvent être une grande source d’inspiration.
         </p>
       </div>
-      <button
-        type="button"
-        className="btn-contact"
-        onClick={() => setContact(!contact)}
-      >
-        Contact
-      </button>
+      <div className="container-btn-contact">
+        <button
+          type="button"
+          className="btn-contact"
+          onClick={() => setContact(!contact)}
+        >
+          Contact
+        </button>
+      </div>
 
       <div className="container-info">
         <h2>Expériences</h2>

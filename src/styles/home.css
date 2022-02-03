@@ -1,80 +1,166 @@
-.container-menu-h {
-  width: 100vw;
-  height: auto;
-  display: flex;
-  flex-direction: column;
+@media screen and (min-width: 800px) {
+  .container-menu-h {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-h {
+    text-transform: capitalize;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    border-bottom: black 3px solid;
+    padding-left: 10px;
+  }
+
+  .link-h {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .container-intro-a {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    border-bottom: black 3px solid;
+  }
+
+  .container-intro-a h1 {
+    width: 100vw;
+    color: black;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 100px;
+    text-align: center;
+    border-bottom: black 5px solid;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-sub {
+    width: 97vw;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family:
+      'Open Sans',
+      sans-serif;
+    font-weight: 400;
+    border-bottom: black 2px solid;
+  }
+
+  .container-desc p {
+    width: 30vw;
+    height: 15vh;
+    font-family:
+      'Open Sans',
+      sans-serif;
+    font-weight: 500;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    border-bottom: black 2px solid;
+  }
+
+  .container-desc {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .container-desc img {
+    max-width: 50vw;
+  }
 }
 
-.title-h {
-  text-transform: capitalize;
-  color: black;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 80px;
-  border-bottom: black 3px solid;
-  padding-left: 10px;
-}
+@media screen and (max-width: 800px) {
+  .container-menu-h {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
 
-.link-h {
-  text-decoration: none;
-  cursor: pointer;
-}
+  .title-h {
+    text-transform: capitalize;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    border-bottom: black 3px solid;
+    padding-left: 10px;
+  }
 
-.container-intro-a {
-  width: 100vw;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  border-bottom: black 3px solid;
-}
+  .link-h {
+    text-decoration: none;
+    cursor: pointer;
+  }
 
-.container-intro-a h1 {
-  width: 100vw;
-  color: black;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 500;
-  font-size: 100px;
-  text-align: center;
-  border-bottom: black 5px solid;
-  margin: 0;
-  padding: 0;
-}
+  .container-intro-a {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    border-bottom: black 3px solid;
+  }
 
-.container-sub {
-  width: 97vw;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-family:
-    'Open Sans',
-    sans-serif;
-  font-weight: 400;
-  border-bottom: black 2px solid;
-}
+  .container-intro-a h1 {
+    width: 100vw;
+    color: black;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    border-bottom: black 5px solid;
+    margin: 0;
+    padding: 0;
+  }
 
-.container-desc p {
-  width: 30vw;
-  height: 15vh;
-  font-family:
-    'Open Sans',
-    sans-serif;
-  font-weight: 500;
-  padding-left: 50px;
-  padding-bottom: 50px;
-  padding-top: 30px;
-  border-bottom: black 2px solid;
-}
+  .container-sub {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    font-family:
+      'Open Sans',
+      sans-serif;
+    font-weight: 400;
+    border-bottom: black 2px solid;
+  }
 
-.container-desc {
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+  .container-desc p {
+    width: 80vw;
+    height: auto;
+    font-family:
+      'Open Sans',
+      sans-serif;
+    font-weight: 500;
+    padding-left: 5%;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    border-bottom: none;
+  }
 
-.container-desc img {
-  max-width: 50vw;
+  .container-desc {
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .container-desc img {
+    max-width: 100vw;
+  }
 }
