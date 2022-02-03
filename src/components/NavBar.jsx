@@ -38,6 +38,11 @@ const NavBar = () => {
             Typographie
           </a>
         </Link>
+        <Link to="/about" className="link">
+          <a className="menu-item--small" href="/Typographie">
+            About
+          </a>
+        </Link>
       </Menu>
     </>
   );

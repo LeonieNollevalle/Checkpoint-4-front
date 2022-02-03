@@ -17,9 +17,9 @@ const Home = () => {
   console.log(categorie);
   return (
     <>
-      <div className="container-intro">
-        <h1>Léonie&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Nollevalle☺︎</h1>
-        <div className="container-subtitle">
+      <div className="container-intro-a">
+        <h1>Léonie&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;Nollevalle</h1>
+        <div className="container-sub">
           <h3>Designer Graphique</h3>
           <h3>Dev Parfois</h3>
         </div>
@@ -29,6 +29,9 @@ const Home = () => {
         </div>
       </div>
       <div className="container-menu-h">
+        <Link to="/about" className="link-h">
+          <h1 className="title-h">About</h1>
+        </Link>
         {categorie
           ? categorie.map((cat) => {
             return <Link className="link-h" to={`/category/${cat.id}`}>

@@ -1,0 +1,236 @@
+@media screen and (min-width: 800px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-About {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(180, 180, 180);
+  }
+
+  .container-intro {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .container-intro h1 {
+    width: 50vw;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 300px;
+    padding-left: 50px;
+    flex-wrap: wrap;
+  }
+
+  .container-intro p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    width: 35vw;
+  }
+
+  .container-info {
+    width: 100vw;
+    height: auto;
+    background-color: rgb(180, 180, 180);
+  }
+
+  .container-info p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    padding-left: 50vw;
+    padding-right: 30px;
+  }
+
+  .container-info h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    border-bottom: 2px solid black;
+    width: 100vw;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 50px;
+  }
+
+  .container-info h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    padding-top: 10px;
+    width: 100vw;
+    padding-bottom: 10px;
+    padding-left: 50px;
+  }
+
+  .container-info h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    padding-top: 10px;
+    width: 100vw;
+    padding-bottom: 10px;
+    padding-left: 50px;
+  }
+
+  .container-competence {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(180, 180, 180);
+    width: 100vw;
+  }
+
+  .container-competence p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 50px;
+    width: 33.3333vw;
+  }
+
+  .competence-graphique {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-contact {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-left: 53%;
+    border: none;
+  }
+
+  .btn-contact:hover {
+    color: black;
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-About {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(180, 180, 180);
+  }
+
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .container-intro {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(180, 180, 180);
+    padding-bottom: 10%;
+  }
+
+  .container-intro h1 {
+    width: 70vw;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 200px;
+    padding-left: 20px;
+    flex-wrap: wrap;
+  }
+
+  .container-intro p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    width: 65vw;
+    padding-left: 30%;
+  }
+
+  .container-info {
+    width: 100vw;
+    height: auto;
+    background-color: rgb(180, 180, 180);
+  }
+
+  .container-info p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    padding-left: 50vw;
+    padding-right: 30px;
+  }
+
+  .container-info h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    border-bottom: 2px solid black;
+    width: 100vw;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+
+  .container-info h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    padding-top: 10px;
+    width: 100vw;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+
+  .container-info h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    padding-top: 10px;
+    width: 100vw;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+
+  .container-competence {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(180, 180, 180);
+    width: 100vw;
+  }
+
+  .container-competence p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 50px;
+    width: 100vw;
+  }
+
+  .competence-graphique {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

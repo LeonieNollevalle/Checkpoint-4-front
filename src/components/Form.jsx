@@ -7,8 +7,7 @@ import axios from 'axios';
 const Form = ({ form, setForm, datas, setData }) => {
   const [projet, setProjet] = useState(null);
   const [message, setMessage] = useState(false);
-  const chemin = window.location.pathname;
-  console.log(chemin);
+  // const chemin = window.location.pathname;
   const onSubmit = () => {
     window.location.reload();
   };

@@ -20,7 +20,7 @@
   cursor: pointer;
 }
 
-.container-intro {
+.container-intro-a {
   width: 100vw;
   height: 80vh;
   display: flex;
@@ -28,7 +28,7 @@
   border-bottom: black 3px solid;
 }
 
-.container-intro h1 {
+.container-intro-a h1 {
   width: 100vw;
   color: black;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -40,12 +40,14 @@
   padding: 0;
 }
 
-.container-subtitle {
+.container-sub {
   width: 97vw;
   display: flex;
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-family:
     'Open Sans',
     sans-serif;

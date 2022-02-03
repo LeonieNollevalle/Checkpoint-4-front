@@ -83,3 +83,28 @@
   border: 1px solid white;
   background-color: black;
 }
+
+.container-form textarea {
+  width: 70%;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.btn-form {
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-right: 2%;
+  border: 1px solid black;
+}
+
+.btn-form:hover {
+  color: white;
+  border: 1px solid white;
+  background-color: black;
+}
